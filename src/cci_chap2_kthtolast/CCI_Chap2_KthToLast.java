@@ -46,7 +46,6 @@ public class CCI_Chap2_KthToLast
         if (k > list.size())
             return -1;
         
-        int actualVal = 0;
         int i = 0;
         int index = 0;
         while (i < list.size())
@@ -57,12 +56,11 @@ public class CCI_Chap2_KthToLast
             }
             else
             {
-                actualVal = list.get(index);
                 i++;
                 index++;
             }
         }
         
-        return actualVal;
+        return list.get(index);;
     }
 }
